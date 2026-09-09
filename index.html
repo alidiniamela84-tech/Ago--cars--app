@@ -92,6 +92,20 @@
 }
 </style>
 
+
+<style>
+/* HOTFIX 2026-09-09: company identifiers always visible below logo */
+.sellerInfo{display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:flex-start!important;overflow:visible!important;color:#111827!important}
+.sellerInfo .invoiceLogo{display:block!important;width:300px!important;height:125px!important;max-width:100%!important;object-fit:contain!important;margin:0 auto!important}
+.sellerInfo .companyUnderLogo{display:block!important;visibility:visible!important;opacity:1!important;position:relative!important;z-index:5!important;color:#111827!important;background:#fff!important;width:100%!important;max-width:320px!important;height:auto!important;overflow:visible!important;text-align:center!important;font-size:13px!important;line-height:1.45!important;margin:4px auto 8px!important;white-space:normal!important}
+@media(max-width:560px){
+ .preview-head{grid-template-columns:60% 40%!important;gap:6px!important;align-items:start!important}
+ .sellerInfo .invoiceLogo{width:210px!important;height:100px!important}
+ .sellerInfo .companyUnderLogo{font-size:10.5px!important;line-height:1.4!important;margin-top:2px!important}
+ .invoiceMeta{font-size:10.5px!important;padding-top:5px!important}
+}
+@media print{.sellerInfo .companyUnderLogo{display:block!important;color:#000!important;font-size:11px!important}.sellerInfo .invoiceLogo{width:260px!important;height:110px!important}}
+</style>
 </head>
 <body>
 <div class="appbar"><div class="brand">AGO CARS</div><div class="badge">Factures</div></div>
